@@ -1,0 +1,1 @@
+@interface Book : NSObject {	NSString *title;	NSString *author;	NSDate *copyright;}@property (nonatomic, copy) NSString * title;@property (nonatomic, retain) NSString * author;@property (nonatomic, retain) NSDate * copyright;@end
