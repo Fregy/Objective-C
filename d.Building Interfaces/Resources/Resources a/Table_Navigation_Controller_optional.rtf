@@ -1,0 +1,53 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf390
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww20500\viewh14300\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs24 \cf0 \
+You will use Navigation Controller for this exercise and XIB\
+\
+The FIRST view is a tableViewController.\'a0\
+\
+The setup should be very similar to what we've been doing.\
+It should display the first name, middle name, and last name of a person from an array of people and an image at the left of each cell. \
+\
+The image for each cell is same.\
+- User should also be able to drag and change the order of the rows \
+- should also be able to edit and delete any row from this table.\
+- Each cell should show a disclosure indicator \
+- tapping on any cell should NOT leave the cell highlighted \
+\
+The table view should initially be empty, but number of rows increases as the user adds people.\'a0\
+The tableview will be inside a navigation controller, again as this is not a storyboard project and so it needs to be done in code in your delegate. you will need to programmatically add a top left navigation bar button that should push to the SECOND view.\
+\
+\
+There should be a main mutable array to store all the records.\
+\
+That array will contain custom object of a type people or person for.e.g, which contains:\
+NSString of a person's First Name\
+NSString of a person's Middle Name\
+NSString of a person's Last Name\
+And a mutable array of that person's job\
+\
+The table view should also use custom cells to display the data.\
+\
+\'a0\
+The SECOND view a view controller\
+This view will have\'a0 text fields to add a person's first, last and middle name and a button if you want or as we did in class in view disappear that can be saved.\
+\
+\
+On the FIRST view when the user presses Disclosure indicator, a new view should be pushed onto the navigation controller.\'a0\
+\
+This THIRD view that it pushes should be a tableview controller. This\'a0 tableViewController should display the inner array of Jobs that person has. Again, this should be initially empty, but rows should be added as the user adds to that person's jobs, using the top right navigation bar button item. Pressing that should push the fourth view.\
+\
+The FOURTH view\'a0\
+will contain a single picker view, a toolbar, and a bar button in that toolbar. The picker view should display a list of no less than 10 jobs (cashier, delivery man, hotel clerk, etc) in a single component. These can be hard-coded, and can be whatever jobs you want them to be. When the user presses the toolbar button, the view should be popped back to that THIRD tableview, and that job should be added to the array of jobs for that person (which should in turn, be displayed in the tableview controller for that view.\'a0 You should not be able to add duplicate jobs for the same person, also User should be able to set the table in edit mode and remove the jobs from the list.\
+\
+When the user selects one of those jobs, it pushes the FIFTH view.\'a0\
+However, this view will be pushed modally, not from the navigation controller.\
+\
+This view should contain\'a0 labels for first, middle, last name and\'a0 an added label for the selected job.\'a0\
+\
+}
